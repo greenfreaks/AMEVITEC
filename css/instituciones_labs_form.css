@@ -1,0 +1,174 @@
+/*=================Variables de Color=================*/
+
+:root {
+    --verde: #2AA65A;
+    --limon: #8DC63F;
+    --amarillo: #FFF200;
+    --naranja: #FAA61A;
+    --rosa: #D80B8C;
+    --morado: #92278F;
+    --marino: #2E3192;
+    --azul: #0072BC;
+
+    --primary: var(--morado);
+    --secondary: var(--rosa);
+    --cta: var(--rosa)|;
+}
+
+/*-----------------------------*/
+/*----------LABS_BTNS----------*/
+/*-----------------------------*/
+.btns_labs{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/*-----------------------------*/
+/*---------CONTACT-FORM--------*/
+/*-----------------------------*/
+.form{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: 
+                         "form_title"
+                         "instructions"
+                         "nombre_institucion"
+                         "area_conocimiento"
+                         "industria"
+                         "info_lab"
+                         "password"
+                         "submit";
+}
+
+.form_title{
+    grid-area: form_title;
+}
+.instructions{
+    grid-area: instructions;
+    border-bottom: solid 1px #2E3192;
+}
+
+    li{
+        margin-bottom: 20px;
+    }
+
+.nombre_institucion{
+    grid-area: nombre_institucion;
+}
+.area_conocimiento{
+    grid-area: area_conocimiento;
+}
+.industria{
+    grid-area: industria;
+}
+.instructions{
+    grid-area: instructions;
+}
+.info_lab{
+    grid-area: info_lab;
+}
+
+    .equipo, .servicio{
+        min-height: 100px;
+    }
+
+.password{
+    grid-area: password;
+}
+
+.password input{
+    width: 100%;
+}
+.submit{
+    grid-area: submit;
+    margin-bottom: 20px;
+}
+
+/*---------------------------*/
+/*-----RESPONSIVE 800-------*/
+/*-------------------------*/
+
+@media screen and (max-width: 800px){
+    .content{
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+
+    .btns_labs{
+        padding-right: 40px;
+        padding-left: 40px;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1fr, 2);
+        grid-template-rows: repeat(1fr, auto);
+        grid-template-areas: "btn_registro      btn_ciencias"        
+                             "btn_ing         btn_humani";
+    }
+
+    .btn_registro{
+        grid-area: btn_registro;
+    }
+    .btn_ciencias{
+        grid-area: btn_ciencias;
+    }
+    .btn_ing{
+        grid-area: btn_ing;
+    }
+    .btn_humani{
+        grid-area: btn_humani;
+    }
+}
+
+/*---------------------------*/
+/*------RESPONSIVE 600------*/
+/*-------------------------*/
+
+@media screen and (max-width: 600px){
+
+    .btns_labs{
+        padding-right: 40px;
+        padding-left: 40px;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr, auto);
+        grid-template-areas: "btn_registro"
+                             "btn_ciencias"        
+                             "btn_ing"
+                             "btn_humani";
+    }
+    .content{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
+/*---------------------------*/
+/*------RESPONSIVE 500------*/
+/*-------------------------*/
+
+@media screen and (max-width: 500px){
+}
+
+/*---------------------------*/
+/*------RESPONSIVE 370------*/
+/*-------------------------*/
+
+@media screen and (max-width: 370px){
+    .content{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    h5{
+        font-size: 1.2em;
+    }
+
+    h6{
+        font-size: 1em;
+    }
+
+
+}

@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap');
+/*=================Variables de Color=================*/
+
+:root {
+    --verde: #2AA65A;
+    --limon: #8DC63F;
+    --amarillo: #FFF200;
+    --naranja: #FAA61A;
+    --rosa: #D80B8C;
+    --morado: #92278F;
+    --marino: #2E3192;
+    --azul: #0072BC;
+
+    --primary: var(--morado);
+    --secondary: var(--rosa);
+    --cta: var(--rosa);
+}
+
+/*================== Botones ======================*/
+
+.btn,
+.btn-large,
+.btn-small {
+    border-radius: 50px;
+    background-color: var(--primary) !important;
+    /*    color: var(--primary) !important;*/
+
+}
+
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover {
+    background-color: var(--cta) !important;
+    /*    color: var(--primary) !important;*/
+
+}
+
+/*================= backgrounds =================*/
+
+.verde {
+    background-color: var(--verde) !important;
+}
+
+.limon {
+    background-color: var(--limon) !important;
+    ;
+}
+
+.amarillo {
+    background-color: var(--amarillo) !important;
+    ;
+}
+
+.naranja {
+    background-color: var(--naranja) !important;
+    ;
+}
+
+.rosa {
+    background-color: var(--rosa) !important;
+    ;
+}
+
+.morado {
+    background-color: var(--morado) !important;
+    ;
+}
+
+.marino {
+    background-color: var(--marino) !important;
+}
+
+.azul {
+    background-color: var(--azul) !important;
+}
+
+.primary {
+    background-color: var(--primary) !important;
+    ;
+}
+
+.secondary {
+    background-color: var(--secondary) !important;
+    ;
+}
+
+.cta-bg {
+    background-color: var(--cta);
+}
+
+.blured {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.gradient-azul {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2e3192+0,0072bc+56 */
+    background: #2e3192;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #2e3192 0%, #0072bc 56%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #2e3192 0%, #0072bc 56%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #2e3192 0%, #0072bc 56%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e3192', endColorstr='#0072bc', GradientType=1);
+    /* IE6-9 */
+}
+
+.gradient-naranja {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f04923+10,f8a32a+75 */
+    background: #f04923;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #f04923 10%, #f8a32a 75%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #f04923 10%, #f8a32a 75%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #f04923 10%, #f8a32a 75%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f04923', endColorstr='#f8a32a', GradientType=1);
+    /* IE6-9 */
+}
+
+.gradient-verde {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#236b34+0,7ac629+100 */
+    background: #236b34;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #236b34 0%, #7ac629 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #236b34 0%, #7ac629 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #236b34 0%, #7ac629 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#236b34', endColorstr='#7ac629', GradientType=1);
+    /* IE6-9 */
+}
+
+.gradient-morado {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#92278f+10,d80b8c+75 */
+    background: #92278f;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #92278f 10%, #d80b8c 75%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #92278f 10%, #d80b8c 75%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #92278f 10%, #d80b8c 75%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#92278f', endColorstr='#d80b8c', GradientType=1);
+    /* IE6-9 */
+}
+
+/*=================fonts=================*/
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-h1 {
+    font-family: 'CaviarDreamsBold', 'Roboto', Arial;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 13px;
+}
+
+/*=================font styles=================*/
+.texto-verde {
+    color: var(--verde);
+}
+
+.texto-limon {
+    color: var(--limon);
+}
+
+.texto-amarillo {
+    color: var(--amarillo);
+}
+
+.texto-naranja {
+    color: var(--naranja);
+}
+
+.texto-rosa {
+    color: var(--rosa);
+}
+
+.texto-morado {
+    color: var(--morado);
+}
+
+.texto-marino {
+    color: var(--marino);
+}
+
+.texto-azul {
+    color: var(--azul);
+}
+
+.texto-primary {
+    color: var(--primary);
+}
+
+.texto-secondary {
+    color: var(--secondary);
+}
+
+.texto-cta-bg {
+    color: var(--cta);
+}
+
+.justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underlined {
+    text-decoration: underline;
+    text-decoration-color: var(--cta);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.parrafo {
+    font-size: 20px !important;
+}
+
+/*=================helpers=================*/
+
+.fullheight {
+    height: 90vh;
+}
+
+.round-corners {
+    border-radius: 30px;
+}
+
+.round-corners-top {
+    border-radius: 20px 20px 0 0;
+}
+
+.round-corners-bottom {
+    border-radius: 0 0 20px 20px;
+}
+
+/*=================Image effects=================*/
+
+.greyscale-img {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) brightness(0.7);
+}
+
+.frost {
+    -webkit-filter: opacity(.2);
+    filter: opacity(.2);
+}
+
+.blur {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+/*=================HTML elements=================*/
+
+nav,
+footer {
+    /*    background-color: var(--primary) !important;*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2e3192+0,0072bc+56 */
+    background: #2e3192;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #2e3192 0%, #0072bc 56%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #2e3192 0%, #0072bc 56%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #2e3192 0%, #0072bc 56%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e3192', endColorstr='#0072bc', GradientType=1);
+    /* IE6-9 */
+}
+
+nav li a:hover {
+    background: var(--secondary);
+}
+
+body {
+    /*    background-color: var(--gris);*/
+    background-color: white;
+}
+
+blockquote {
+    border-left: 5px solid var(--cta) !important;
+    border-right: 5px solid var(--cta) !important;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.custom-card-image {
+    height: 400px;
+    /* Your height here */
+    overflow: hidden;
+}
+
+.cta {
+    padding: 5px;
+    margin: 20px;
+    border: 10px solid var(--cta);
+}
+
+.cta-verde {
+    margin: 10px;
+    /*    margin: 5px solid var(--limon);*/
+    border: 10px solid var(--limon);
+}
+
+.cta-title {
+    margin: 20px 5px;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid var(--cta);
+}
+
+.cta-title-white {
+    margin: 20px 5px;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid white;
+}
+
+.cta-title-blue {
+    margin: 20px 5px;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid var(--marino);
+}
+
+.header-logo {
+    height: 90%;
+    margin: 5px;
+}
+
+.mobile-logo {
+    height: 50%;
+}
+
+/*==================Experimentos======================*/
+.btn-floating.halfway-fab.middle {
+    position: absolute;
+    right: 45%;
+    bottom: -20px;
+}
+
+.collapsible li.active .expand {
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    -webkit-transform: rotate(180deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+.spec-bubble {
+    border-radius: 0% 100% 100% 0% / 30% 48% 52% 70%;
+}
+
+
+/*---------------------------*/
+/*---------GRID BENEF--------*/
+/*---------------------------*/
+
+.benef{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "benef-I        benef-II";
+    padding: 0 20px 0 50px;
+}
+
+.benef-I{
+    grid-area: benef-I;
+
+}
+.benef-II{
+    grid-area: benef-II;
+}
+.benef-img{
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.benef li{
+    margin-bottom: 5px;
+}
+.benef ul{
+    margin-bottom: 20px;
+}
+.benef-btns{
+    margin-left: 180px;
+    margin-top: 60px
+}
+.benef a{
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 50%;
+    background: var(--morado);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.benef a:hover{
+    box-shadow: 2px 2px 5px 2px #aaa8a8; 
+}
+.benef .benef-btns-II{
+    padding: 20px 30px 20px 30px;
+}
+
+/*-----------------------------*/
+/*-------SOCIAL-NETWORKS------*/
+/*---------------------------*/
+
+.social{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+    padding: 20px 200px 20px 520px;
+}
+.socialFb{
+    grid-area: socialFb;
+}
+.socialLk{
+    grid-area: socialLk;
+}
+.socialTw{
+    grid-area: socialTw;
+}
+.social img{
+    width: 25px;
+    margin-right: 20px;
+}
+.social a{
+    font-size: 1.2em;
+}
+.social a:hover{
+    color: var(--rosa);
+}
+
+/*---------------------------*/
+/*-----RESPONSIVE 800-------*/
+/*-------------------------*/
+
+@media screen and (max-width: 800px){
+.benef{
+    grid-template-columns: 1fr;
+    grid-template-areas: "benef-I"
+                         "benef-II";
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.benef-img{
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 25px;
+}
+
+.social{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+   padding: 20px 200px 20px 200px;
+}
+
+/*---------------------------*/
+/*------RESPONSIVE 600------*/
+/*-------------------------*/
+
+@media screen and (max-width: 600px){
+.benef-II .benef-btns{
+    margin-left: 90px;
+}
+
+.social{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+   padding: 20px 50px 20px 130px;
+}
+.social a{
+    font-size: 1.06em;
+}
+
+/*---------------------------*/
+/*------RESPONSIVE 500------*/
+/*-------------------------*/
+
+@media screen and (max-width: 500px){
+.benef-II .benef-btns{
+    margin-left: 35px;
+}
+
+.social{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+   padding: 20px 50px 20px 92px;
+}
+.social a{
+    font-size: 1.06em;
+}
+
+/*---------------------------*/
+/*------RESPONSIVE 370------*/
+/*-------------------------*/
+
+@media screen and (max-width: 370px){
+.benef{
+    padding: 20px 10px 20px 10px;
+}
+.benef h3{
+    font-size: 2em;
+}
+.benef li{
+    font-size: 1em;
+}
+.benef img{
+    margin-left: 13px;
+}
+.benef a{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin-left: 20px;
+    margin-top: 0px; 
+}
+.social{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+   padding: 10px;
+}
+.social a{
+    font-size: 0.90em;
+}
+
+}

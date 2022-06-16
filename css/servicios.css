@@ -1,0 +1,382 @@
+/*=================Variables de Color=================*/
+
+:root {
+    --verde: #2AA65A;
+    --limon: #8DC63F;
+    --amarillo: #FFF200;
+    --naranja: #FAA61A;
+    --rosa: #D80B8C;
+    --morado: #92278F;
+    --marino: #2E3192;
+    --azul: #0072BC;
+
+    --primary: var(--morado);
+    --secondary: var(--rosa);
+    --cta: var(--rosa);
+}
+section div ol li{
+    padding-bottom: 30px;
+}
+
+
+/*---------------------------*/
+/*------GRID VINCULACIÓN-----*/
+/*---------------------------*/
+
+.vinculacion{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "vinculacion-I        vinculacion-II";
+    padding: 0 20px 0 50px;
+}
+
+.vinculacion-I{
+    grid-area: vinculacion-I;
+
+}
+.vinculacion-II{
+    grid-area: vinculacion-II;
+}
+.vinculacion-img{
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.vinculacion li{
+    margin-bottom: 5px;
+}
+.vinculacion ul{
+    margin-bottom: 20px;
+}
+.vinculacion-btn{
+   display: flex;
+   justify-content: center;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.vinculacion a{
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: var(--morado);
+    border-radius: 10px;
+}
+.vinculacion a:hover{
+    box-shadow: 2px 2px 5px 2px #aaa8a8; 
+}
+
+/*---------------------------*/
+/*------GRID MARKETING-------*/
+/*---------------------------*/
+
+.marketing{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "marketing-II        marketing-I";
+    padding: 0 20px 0 50px;
+}
+
+.marketing-I{
+    grid-area: marketing-I;
+    margin-top: 40px;
+
+}
+.marketing-II{
+    grid-area: marketing-II;
+}
+.marketing-img{
+    width: 100%;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+.marketing li{
+    margin-bottom: 5px;
+}
+.marketing ul{
+    margin-bottom: 20px;
+}
+.marketing-btn{
+   display: flex;
+   justify-content: center;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+.marketing a{
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: var(--azul);
+    border-radius: 10px;
+}
+.marketing a:hover{
+    box-shadow: 2px 2px 5px 2px #aaa8a8; 
+}
+/*---------------------------*/
+/*--------GRID ECONOMÍA------*/
+/*---------------------------*/
+
+.economia{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "economia-I        economia-II";
+    padding: 0 20px 0 50px;
+}
+
+.economia-I{
+    grid-area: economia-I;
+
+}
+.economia-II{
+    grid-area: economia-II;
+}
+.economia-img{
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.economia li{
+    margin-bottom: 5px;
+}
+.economia ul{
+    margin-bottom: 20px;
+}
+.economia-btn{
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+   margin-left: 60px;
+}
+.economia a{
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: var(--rosa);
+    border-radius: 10px;
+}
+.economia a:hover{
+    box-shadow: 2px 2px 5px 2px #aaa8a8; 
+}
+
+/*-----------------------------*/
+/*-------SOCIAL-NETWORKS------*/
+/*---------------------------*/
+
+.social{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+    padding: 20px 200px 20px 520px;
+}
+.socialFb{
+    grid-area: socialFb;
+}
+.socialLk{
+    grid-area: socialLk;
+}
+.socialTw{
+    grid-area: socialTw;
+}
+.social img{
+    width: 25px;
+    margin-right: 20px;
+}
+.social a{
+    font-size: 1.2em;
+}
+.social a:hover{
+    color: var(--rosa);
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 800---------*/
+/*-------------------------*/
+
+@media screen and (max-width: 800px){
+.vinculacion{
+    grid-template-columns: 1fr;
+    grid-template-areas: "vinculacion-I"
+                         "vinculacion-II";
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.vinculacion-img{
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 25px;
+}
+.vinculacion-btn{
+   margin-left: 0px;
+}
+.marketing{
+    grid-template-columns: 1fr;
+    grid-template-areas: "marketing-I"
+                         "marketing-II";
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.marketing-img{
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 25px;
+}
+.marketing-btn{
+   margin-right: 0px;
+}
+
+.economia{
+    grid-template-columns: 1fr;
+    grid-template-areas: "economia-I"
+                         "economia-II";
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.economia-img{
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 25px;
+}
+.economia-btn{
+   margin-left: 0px;
+}
+
+.social{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+   padding: 20px 200px 20px 200px;
+}
+/*---------------------------*/
+/*------RESPONSIVE 600------*/
+/*-------------------------*/
+
+@media screen and (max-width: 600px){
+.social{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+   padding: 20px 50px 20px 130px;
+}
+.social a{
+    font-size: 1.06em;
+}
+
+}
+
+/*---------------------------*/
+/*------RESPONSIVE 500------*/
+/*-------------------------*/
+
+@media screen and (max-width: 500px){
+.social{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+   padding: 20px 50px 20px 92px;
+}
+.social a{
+    font-size: 1.06em;
+}
+}
+
+
+/*---------------------------*/
+/*------RESPONSIVE 370------*/
+/*-------------------------*/
+
+@media screen and (max-width: 370px){
+.vinculacion{
+    padding: 20px 10px 20px 10px;
+}
+.vinculacion h3{
+    font-size: 2em;
+}
+.vinculacion li{
+    font-size: 1em;
+}
+.vinculacion img{
+    margin-left: 13px;
+}
+.vinculacion a{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin-top: 0px; 
+}
+
+.marketing{
+    padding: 20px 10px 20px 10px;
+}
+.marketing h3{
+    font-size: 2em;
+}
+.marketing li{
+    font-size: 1em;
+}
+.marketing img{
+    margin-left: 13px;
+}
+.marketing a{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin-top: 0px; 
+}
+
+.economia{
+    padding: 20px 10px 20px 10px;
+}
+.economia h3{
+    font-size: 2em;
+}
+.economia li{
+    font-size: 1em;
+}
+.economia img{
+    margin-left: 13px;
+}
+.economia a{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin-top: 0px; 
+}
+
+.social{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+   padding: 10px;
+}
+.social a{
+    font-size: 0.90em;
+}
+
+}
+

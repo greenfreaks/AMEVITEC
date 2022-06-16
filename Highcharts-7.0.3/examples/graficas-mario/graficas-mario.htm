@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Highcharts Example</title>
+
+		<style type="text/css">
+
+		</style>
+	</head>
+	<body>
+<script src="../../code/highcharts.js"></script>
+<script src="../../code/modules/exporting.js"></script>
+<script src="../../code/modules/export-data.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
+
+<script type="text/javascript">
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'column',
+        scrollablePlotArea: {
+            minWidth: 1500,
+            scrollPositionX: 0
+        }
+    },
+    title: {
+        text: 'Gráfica de las entidades de los SNI'
+    },
+    xAxis: {
+        categories: ['Aguascalientes', 'Baja California', 'Baja California Sur', 'Campeche', 'CDMX', 'Chiapas', 'Chihuahua', 'Coahuila', 'Colima', 'Durango', 'EDOMEX', 'Guanajuato', 'Guerrero', 'Hidalgo', 'Jalisco', 'Michoacan', 'Morelos', 'Nayarit', 'NL', 'Oaxaca', 'Puebla', 'Q. Roo', 'Queretaro', 'Sinaloa', 'SLP', 'Sonora', 'Tabasco', 'Tamaulipas', 'Tlaxcala', 'Yucatán', 'Coahuila', 'Zacatecas']
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: false
+        },
+        stackLabels: {
+            enabled: true,
+            style: {
+                fontWeight: 'bold',
+                color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+            }
+        }
+    },
+    legend: {
+        align: 'center',
+        x: -30,
+        verticalAlign: 'top',
+        y: 25,
+        floating: true,
+        backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+        borderColor: '#CCC',
+        borderWidth: 1,
+        shadow: false
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:1f}</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            stacking: 'normal',
+            dataLabels: {
+                enabled: false,
+                color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+            }
+        }
+    },
+    colors:[
+    '#2e3192',
+    '#92278f',
+    '#0098ba',
+    '#000'
+    ],
+    series: [{
+        name: 'Candidatos',
+        data: [63, 205, 40, 37, 828, 87, 148, 112, 35, 47, 264, 206, 50, 119, 364, 105, 111, 29, 258, 74, 181, 31, 150, 140, 109, 135, 60, 78, 28, 134, 114, 69]
+    },
+    {
+        name: 'SNI nivel 1',
+        data: [137, 420, 124, 102, 4008, 214, 309, 292, 139, 129, 918, 525, 85, 246, 925, 437, 581,94, 758, 186, 593, 83, 382, 257, 407, 344, 143, 173, 103, 461, 376, 145]
+    }, {
+        name: 'SNI nivel 2',
+        data: [22, 161, 46, 11, 1763, 40, 41, 62, 28, 20, 221, 142, 11, 39, 198, 140, 227, 10, 191, 18, 180, 20, 118, 39, 91, 107, 8, 22, 18, 104, 93, 32]
+    }, {
+        name: 'SNI nivel 3',
+        data: [6, 80, 25, 2, 1274, 12, 10, 14, 8, 5, 72, 77, 2, 4, 75, 58, 137, 2, 53, 5, 78, 10, 76, 14, 55, 28, 2, 11, 2, 36, 50, 7]
+    }]
+});
+
+		</script>
+
+<script type="text/javascript">
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'column',
+        scrollablePlotArea: {
+            minWidth: 1500,
+            scrollPositionX: 0
+        }
+    },
+    title: {
+        text: 'Gráfica de las entidades de los SNI'
+    },
+    xAxis: {
+        categories: ['Aguascalientes', 'Baja California', 'Baja California Sur', 'Campeche', 'CDMX', 'Chiapas', 'Chihuahua', 'Coahuila', 'Colima', 'Durango', 'EDOMEX', 'Guanajuato', 'Guerrero', 'Hidalgo', 'Jalisco', 'Michoacan', 'Morelos', 'Nayarit', 'NL', 'Oaxaca', 'Puebla', 'Q. Roo', 'Queretaro', 'Sinaloa', 'SLP', 'Sonora', 'Tabasco', 'Tamaulipas', 'Tlaxcala', 'Yucatán', 'Coahuila', 'Zacatecas']
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: false
+        },
+        stackLabels: {
+            enabled: true,
+            style: {
+                fontWeight: 'bold',
+                color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+            }
+        }
+    },
+    legend: {
+        align: 'center',
+        x: -30,
+        verticalAlign: 'top',
+        y: 25,
+        floating: true,
+        backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+        borderColor: '#CCC',
+        borderWidth: 1,
+        shadow: false
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:1f}</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            stacking: 'normal',
+            dataLabels: {
+                enabled: false,
+                color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+            }
+        }
+    },
+    colors:[
+    '#2e3192',
+    '#92278f',
+    '#0098ba',
+    '#000'
+    ],
+    series: [{
+        name: 'Estudidiantes de especialidad',
+        data: [63, 205, 40, 37, 828, 87, 148, 112, 35, 47, 264, 206, 50, 119, 364, 105, 111, 29, 258, 74, 181, 31, 150, 140, 109, 135, 60, 78, 28, 134, 114, 69]
+    },
+    {
+        name: 'Estudiantes de maestría',
+        data: [137, 420, 124, 102, 4008, 214, 309, 292, 139, 129, 918, 525, 85, 246, 925, 437, 581,94, 758, 186, 593, 83, 382, 257, 407, 344, 143, 173, 103, 461, 376, 145]
+    }, {
+        name: 'Estudiantes de doctorado',
+        data: [22, 161, 46, 11, 1763, 40, 41, 62, 28, 20, 221, 142, 11, 39, 198, 140, 227, 10, 191, 18, 180, 20, 118, 39, 91, 107, 8, 22, 18, 104, 93, 32]
+    }]
+});
+
+        </script>
+	</body>
+</html>

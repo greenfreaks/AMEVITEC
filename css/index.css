@@ -1,0 +1,366 @@
+/*=================Variables de Color=================*/
+
+:root {
+    --verde: #2AA65A;
+    --limon: #8DC63F;
+    --amarillo: #FFF200;
+    --naranja: #FAA61A;
+    --rosa: #D80B8C;
+    --morado: #92278F;
+    --marino: #2E3192;
+    --azul: #0072BC;
+
+    --primary: var(--morado);
+    --secondary: var(--rosa);
+    --cta: var(--rosa);
+}
+
+/*---------------------------*/
+/*-------GRID QUIENES-------*/
+/*-------------------------*/
+
+.quienes{
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:"nosotros";
+    padding: 0 100px 0 100px;
+    margin-bottom: 70px;
+    box-shadow: 5px 5px 10px 5px #aaa8a8;
+}
+.nosotros{
+    grid-area: nosotros;
+}
+    .nosotros h3{
+        display: inline-block;
+        border-right: 5px solid var(--cta);
+        padding-right: 20px;
+        padding-left: 450px;
+    }
+    .nosotros p{
+        padding:0 200px 0 200px;
+        text-align: center;
+    }
+/*.mision{
+    grid-area: mision;
+}
+    .mision h3{
+        display: inline-block;
+        border-right: 5px solid var(--azul);
+        padding-right: 20px;
+        padding-left: 200px;
+    }
+.vision{
+    grid-area: vision;
+}
+    .vision h3{
+        display: inline-block;
+        border-right: 5px solid var(--morado);
+        padding-right: 20px;
+        padding-left: 200px;
+    }*/
+
+/*---------------------------*/
+/*------GRID-SOLUCIÓN-------*/
+/*-------------------------*/
+
+.solucion{
+    padding:0 100px 100px;
+    margin-top: 70px;
+}
+.solucion-text{
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "talentos      tecno"
+                         "btn-registro  btn-registro";
+}
+.talentos{
+    grid-area: talentos;
+    box-shadow: 2px 5px 10px 0 #aaa8a8;
+}
+.tecno{
+    grid-area: tecno;
+    box-shadow: 2px 5px 10px 0 #aaa8a8;
+}
+.btn-registro{
+    grid-area: btn-registro;
+    width: 30%;
+    margin-left: 350px;
+}
+.btn-registro a h4{
+    margin-bottom: 25px;
+}
+.btn-registro:hover{
+    box-shadow: 2px 5px 10px 0 #000
+}
+
+/*---------------------------*/
+/*-------GRID-METHOD--------*/
+/*-------------------------*/
+
+.method{
+    padding:0 100px 100px;
+    margin-top: 0px;
+}
+.method h3{
+    text-align: center;
+    background: var(--)
+}
+.method h5{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+    padding: 5px 5px;
+}
+
+.method-text{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-column: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "strategy      proyecto           ejecucion       comunicacion";
+    box-shadow: 2px 5px 10px 0 #aaa8a8;
+    padding: 0 15px 0 15px;
+}
+.strategy{
+    grid-area: strategy;
+}
+.proyecto{
+    grid-area: proyecto;
+}
+.ejecucion{
+    grid-area: ejecucion;
+}
+.comunicacion{
+    grid-area: comunicacion;
+}
+
+.method-sub{
+    font-size: 16px;
+    color: #000;
+}
+
+/*-----------------------------*/
+/*-------SOCIAL-NETWORKS------*/
+/*---------------------------*/
+
+.social{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+    padding: 20px 200px 20px 520px;
+}
+.socialFb{
+    grid-area: socialFb;
+}
+.socialLk{
+    grid-area: socialLk;
+}
+.socialTw{
+    grid-area: socialTw;
+}
+.social img{
+    width: 25px;
+    margin-right: 20px;
+}
+.social a{
+    font-size: 1.2em;
+}
+.social a:hover{
+    color: var(--rosa);
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 800---------*/
+/*-------------------------*/
+
+@media screen and (max-width: 800px){
+.quienes{
+    grid-template-columns: 1fr;
+    grid-template-areas: "nosotros"
+                         "mision"
+                         "vision";
+}
+.nosotros h3, .mision h3, .vision h3{
+    padding-left: 0px;
+}
+.nosotros p{
+    text-align: left;
+}
+.nosotros p, .mision p, .vision p{
+    padding: 0 20px 0 20px;
+}
+
+.btn-registro{
+    width: 100%;
+    margin-left: 0px;
+}
+
+.method{
+    justify-items:center;
+}
+
+.method-text{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "strategy      proyecto"
+                         "ejecucion     comunicacion";
+    padding: 20px;
+}
+.method-text div{
+    margin-left: 30px;
+}
+.social{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+   padding: 20px 200px 20px 200px;
+}
+
+
+
+
+/*---------------------------*/
+/*------RESPONSIVE 600------*/
+/*-------------------------*/
+
+@media screen and (max-width: 600px){
+.quienes{
+    padding: 20px;
+    margin-bottom: 0;
+}
+.quienes h3{
+    margin-left: 20px;
+}
+.solucion{
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.method{
+    padding: 20px;
+}
+
+.method-text{
+    grid-template-columns: 1fr;
+    grid-template-areas: "strategy"      
+                         "proyecto"
+                         "ejecucion"     
+                         "comunicacion";
+    padding: 20px;
+    width: 100%;
+    margin-left: 0;
+}
+
+.social{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+   padding: 20px 50px 20px 130px;
+}
+.social a{
+    font-size: 1.06em;
+}
+
+
+
+/*---------------------------*/
+/*------RESPONSIVE 500------*/
+/*-------------------------*/
+
+@media screen and (max-width: 500px){
+.solucion{
+    padding: 30px;
+}
+.solucion-text{
+    grid-template-columns: 1fr;
+    grid-template-areas: "talentos"
+                         "tecno"
+                         "btn-registro";
+}
+
+.social{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+   padding: 20px 50px 20px 92px;
+}
+.social a{
+    font-size: 1.06em;
+}
+
+/*---------------------------*/
+/*------RESPONSIVE 370------*/
+/*-------------------------*/
+
+@media screen and (max-width: 370px){
+.quienes h3{
+    font-size: 2em;
+}
+.quienes p{
+    font-size: 1.2em;
+}
+.section h4{
+font-size: 2em;
+}
+.section h5{
+font-size: 1.2em;
+}
+.impulsamos{
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.solucion{
+    margin-top: 0;
+}
+
+.solucion h3{
+    font-size: 2em;
+    margin-left: 0;
+}
+.solucion p{
+    font-size: 1.2em;
+}
+.btn-registro a h4{
+    font-size: 1.2em;
+}
+
+.method h3{
+    font-size: 2em;
+}
+.method p{
+    font-size: 1.2em;
+}
+.social{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+   padding: 10px;
+}
+.social a{
+    font-size: 0.90em;
+}
+
+}
+
+
+
+
+

@@ -1,0 +1,163 @@
+
+.cuerpo{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(1, auto);
+	grid-template-areas: "tit-sni 			tit-sni 			tit-sni"
+						 "btns-sni 			btns-sni 			btns-sni"
+						 "graf-sni 			graf-sni 			graf-sni"
+						 "tit-bec 			tit-bec 			tit-bec"
+						 "btns-bec 			btns-bec 			btns-bec"
+						 "graf-bec 			graf-bec 			graf-bec"
+						 ;
+}
+.tit-sni{
+	grid-area: tit-sni;
+	text-align: center;
+	color: #2e3192;
+}
+		.tit-sni h5{
+			color: #000;
+		}
+.btns-sni{
+	grid-area: btns-sni; 
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(1, auto);
+	grid-template-areas: "btn-entidadsni		btn-areasni		btn-ingresomsni		btn-ingresoasni";
+	justify-items: center; 
+}
+
+.btns-sni button{
+	width: 50%;
+}
+
+.btn-entidadsni{
+	grid-area: btn-entidadsni;
+}
+.btn-areasni{
+	grid-area: btn-areasni;
+}
+.btn-ingresomsni{
+	grid-area: btn-ingresomsni;
+}
+.btn-ingresoasni{
+	grid-area: btn-ingresoasni;
+}
+
+
+.graf-sni{
+	grid-area: graf-sni;
+	width: 98%;
+	max-height: 400px;
+	height: auto;
+	margin-left: 10px;
+	padding: 10px;
+	overflow-y: visible;
+	overflow-x: hidden;
+	justify-items:center;
+}
+.graf-sni .highcharts-axis{
+	display: none;
+}
+.graf-sni .highcharts-yaxis-labels{
+	display: none;
+}
+.tit-bec{
+	grid-area: tit-bec;
+	text-align: center;
+	color: #2e3192;
+}
+		.tit-bec h5{
+			color: #000;
+		}
+.btns-bec{
+	grid-area: btns-bec; 
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(1, auto);
+	grid-template-areas: "btn-entidadbec		btn-areabec		btn-ingresosbec";
+	justify-items: center; 
+}
+
+.btns-bec button{
+	width: 50%;
+}
+
+.btn-entidadbec{
+	grid-area: btn-entidadbec;
+}
+.btn-areasbec{
+	grid-area: btn-areasbec;
+}
+.btn-ingresosbec{
+	grid-area: btn-ingresosbec;
+}
+.graf-bec{
+	grid-area: graf-bec;
+	width: 98%;
+	max-height: 400px;
+	height: auto;
+	margin-left: 10px;
+	padding: 10px;
+	overflow-y: visible;
+	overflow-x: hidden;
+}
+
+
+
+
+@media only screen and (max-width: 599px){
+.btns-sni{
+	grid-area: btns-sni; 
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, auto);
+	grid-template-areas: "btn-entidadsni		btn-areasni"		
+						 "btn-ingresomsni		btn-ingresoasni";
+	justify-items: center; 
+}
+}
+
+@media only screen and (max-width: 370px){
+.tit-sni h3{
+	font-size: 2rem;
+}
+.tit-sni h5{
+	font-size: 1.5rem;
+}
+
+.tit-bec h3{
+	font-size: 2rem;
+}
+.tit-bec h5{
+	font-size: 1.5rem;
+}
+.btns-sni{
+	grid-area: btns-sni; 
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(1, auto);
+	grid-template-areas: "btn-entidadsni"		
+						 "btn-areasni"		
+						 "btn-ingresomsni"		
+						 "btn-ingresoasni";
+	justify-items: center; 
+}
+.btns-bec{
+	grid-area: btns-bec; 
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(1, auto);
+	grid-template-areas: "btn-entidadbec"		
+						 "btn-areabec"		
+						 "btn-ingresosbec";
+	justify-items: center; 
+}
+}

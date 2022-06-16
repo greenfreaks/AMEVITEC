@@ -1,0 +1,214 @@
+/*=================Variables de Color=================*/
+
+:root {
+    --verde: #2AA65A;
+    --limon: #8DC63F;
+    --amarillo: #FFF200;
+    --naranja: #FAA61A;
+    --rosa: #D80B8C;
+    --morado: #92278F;
+    --marino: #2E3192;
+    --azul: #0072BC;
+
+    --primary: var(--morado);
+    --secondary: var(--rosa);
+    --cta: var(--rosa);
+}
+
+
+/*---------------------------*/
+/*---------GRID BENEF--------*/
+/*---------------------------*/
+
+.benef{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "benef-II        benef-I";
+    padding: 0 20px 0 50px;
+}
+
+.benef-I{
+    grid-area: benef-I;
+    margin-top: 40px;
+
+}
+.benef-II{
+    grid-area: benef-II;
+}
+.benef-img{
+    width: 100%;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+.benef li{
+    margin-bottom: 5px;
+}
+.benef ul{
+    margin-bottom: 20px;
+}
+.benef-btns{
+    margin-left: 110px;
+    margin-top: 60px
+}
+.benef a{
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 50%;
+    background: var(--azul);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.benef a:hover{
+    box-shadow: 2px 2px 5px 2px #aaa8a8; 
+}
+.benef .benef-btns-II{
+    padding: 20px 30px 20px 30px;
+}
+
+/*-----------------------------*/
+/*-------SOCIAL-NETWORKS------*/
+/*---------------------------*/
+
+.social{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+    padding: 20px 200px 20px 520px;
+}
+.socialFb{
+    grid-area: socialFb;
+}
+.socialLk{
+    grid-area: socialLk;
+}
+.socialTw{
+    grid-area: socialTw;
+}
+.social img{
+    width: 25px;
+    margin-right: 20px;
+}
+.social a{
+    font-size: 1.2em;
+}
+.social a:hover{
+    color: var(--rosa);
+}
+
+/*---------------------------*/
+/*-------RESPONSIVE 800---------*/
+/*-------------------------*/
+
+@media screen and (max-width: 800px){
+.benef{
+    grid-template-columns: 1fr;
+    grid-template-areas: "benef-I"
+                         "benef-II";
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.benef-img{
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 25px;
+}
+
+.social{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+   padding: 20px 200px 20px 200px;
+}
+
+/*---------------------------*/
+/*------RESPONSIVE 600------*/
+/*-------------------------*/
+
+@media screen and (max-width: 600px){
+.benef-II .benef-btns{
+    margin-left: 90px;
+}
+
+.social{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+   padding: 20px 50px 20px 130px;
+}
+.social a{
+    font-size: 1.06em;
+}
+
+/*---------------------------*/
+/*------RESPONSIVE 500------*/
+/*-------------------------*/
+
+@media screen and (max-width: 500px){
+.benef-II .benef-btns{
+    margin-left: 35px;
+}
+
+.social{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+   padding: 20px 50px 20px 92px;
+}
+.social a{
+    font-size: 1.06em;
+}
+}
+/*---------------------------*/
+/*------RESPONSIVE 370------*/
+/*-------------------------*/
+
+@media screen and (max-width: 370px){
+.benef{
+    padding: 20px 10px 20px 10px;
+}
+.benef h3{
+    font-size: 2em;
+}
+.benef li{
+    font-size: 1em;
+}
+.benef img{
+    margin-left: 13px;
+}
+.benef a{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin-left: 20px;
+    margin-top: 0px; 
+}
+
+.social{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "socialFb"      
+                         "socialLk"
+                         "socialTw";
+   padding: 10px;
+}
+.social a{
+    font-size: 0.90em;
+}
+
+}
